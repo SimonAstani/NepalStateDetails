@@ -2,6 +2,7 @@
 This fixtures gives state wise details of municipality, sub-municipality,   District. Especially build for django fixtures..
 and stores into the corresponding models..
 The models details are:
+```
 class Country(models.Model):
     name = models.CharField(max_length=254)
 
@@ -23,5 +24,5 @@ class Municipality(models.Model):
 
 class Ward(models.Model):
     number = models.IntegerField()
-    municipality = models.ForeignKey(Municipality)
+    municipality = models.ForeignKey(Municipality)```
 
